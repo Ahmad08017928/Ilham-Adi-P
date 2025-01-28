@@ -10,6 +10,7 @@ import portofolio5 from "../public/img/portofolio-5.png";
 import portofolio6 from "../public/img/portofolio-6.png";
 import portofolio7 from "../public/img/portofolio-7.png";
 import portofolio8 from "../public/img/portofolio-8.png";
+import portofolio9 from "../public/img/image.png";
 import sertifikat1 from "../public/img/artificial intelligence.png";
 import sertifikat2 from "../public/img/python.png";
 import sertifikat3 from "../public/img/machine learning.png";
@@ -124,7 +125,7 @@ export default function Home() {
                 <span className="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Ilham Adi Purnomo</span>
             </h1>
             <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student & <span className="text-dark">Junior programmer</span></h2>
-            <p className="font-medium text-secondary mb-10 leading-relaxed">Belajar Web Programming itu mudah bukan dan menyenangkan bukan. <span className="text-dark font-bold">Bukan!</span></p>
+            <p className="font-medium text-secondary mb-10 leading-relaxed">Menghidupkan ide Anda menjadi solusi digital.<span className="text-dark font-bold">Bukan!</span></p>
 
             <Link href="mailto:ilhamadipurnomo55@gmail.com" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</Link>
             </div>
@@ -151,8 +152,8 @@ export default function Home() {
         <div className="flex flex-wrap">
             <div className="w-full px-4 mb-10 lg:w-1/2">
             <h4 className="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-            <h2 className="font-bold text-dark text-2xl mb-5 max-w-md lg:text-3xl">Yuk, belajar web programming di CodeCraft!</h2>
-            <p className="font-medium text-base text-secondary max-w-xl lg:text-lg">Saya hadir untuk kamu yang ingin mendalami dunia web programming dengan cara yang seru dan praktis. Tidak perlu bingung lagi, kita belajar dari dasar sampai mahir bersama-sama!</p>
+            <h2 className="font-bold text-dark text-2xl mb-5 max-w-md lg:text-3xl">Kenali saya lebih dekat</h2>
+            <p className="font-medium text-base text-secondary max-w-xl lg:text-lg">Saya adalah seorang Junior web programmer yang berfokus pada pengembangan aplikasi web modern dan efisien. Dengan pengalaman di berbagai teknologi seperti Laravel, Tailwind CSS, dan lainnya, saya siap membantu mewujudkan ide Anda menjadi realitas digital yang luar biasa.</p>
             </div>
             <div className="w-full px-4 lg:w-1/2">
             <h3 className="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
@@ -184,12 +185,18 @@ export default function Home() {
                 </svg>
                 </Link>
 
-                
                 <Link href="https://www.linkedin.com/in/ilham-a-p-13a635248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                 <svg role="img" width="20" className="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <title>LinkedIn</title>
+                    <title>linkedin</title>
                     <path
                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                </Link>
+                
+                <Link href="https://github.com/Ahmad08017928" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" >
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <title>Github</title>
+                    <path fill="currentColor" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584c.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076c-.343-.93-.881-1.175-.881-1.175c-.734-.489.048-.489.048-.489c.783.049 1.224.832 1.224.832c.734 1.223 1.859.88 2.3.685c.048-.538.293-.88.489-1.076c-1.762-.196-3.621-.881-3.621-3.964c0-.88.293-1.566.832-2.153c-.05-.147-.343-.978.098-2.055c0 0 .685-.196 2.201.832c.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832c.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915c.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.98 7.98 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0" />
                 </svg>
                 </Link>
             </div>
@@ -232,37 +239,46 @@ export default function Home() {
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
-                    <Image src={portofolio4} alt="portofolio-1" className="w-full" loading="lazy" />
+                    <Image src={portofolio4} alt="portofolio-4" className="w-full" loading="lazy" />
                 </div>
                 <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Web Aplication Blog</h3>
                 <p className="font-md text-base text-secondary">This blog page features an in-depth collection of articles, allowing users to search and explore various topics efficiently.</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
-                    <Image src={portofolio5} alt="portofolio-1" className="w-full"  loading="lazy" />
+                    <Image src={portofolio5} alt="portofolio-5" className="w-full"  loading="lazy" />
                 </div>
                 <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Landing page Smkn 1 Kraksaan</h3>
                 <p className="font-md text-base text-secondary">a schoolyard with tons of features and information, and offers a modern layout</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
-                    <Image src={portofolio6} alt="portofolio-1" className="w-full" loading="lazy" />
+                    <Image src={portofolio6} alt="portofolio-6" className="w-full" loading="lazy" />
                 </div>
                 <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Landing page Adventure</h3>
                 <p className="font-md text-base text-secondary">It is the homepage of an adventure website that offers vibrant browsing and a great experience and offers a modern layout</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
-                    <Image src={portofolio7} alt="portofolio-1" className="w-full" loading="lazy" />
+                    <Image src={portofolio7} alt="portofolio-7" className="w-full" loading="lazy" />
                 </div>
                 <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Natural Language Processing (NLP) </h3>
                 <p className="font-md text-base text-secondary">a web-based application that is used to provide a statement of a word or sentence and can choose between positive and negative sentences.</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
-                    <Image src={portofolio8} alt="portofolio-1" className="w-full" loading="lazy"/>
+                    <Image src={portofolio8} alt="portofolio-8" className="w-full" loading="lazy"/>
                 </div>
                 <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Web Application E-Commerce (CRUD)</h3>
+                <p className="font-md text-base text-secondary">a web-based application designed to perform CRUD functions of an E-Commerce.</p>
+            </div>
+            <div className="mb-12 p-4 md:w-1/2">
+                <div className="rounded-md shadow-md overflow-hidden">
+                    <Image src={portofolio9} alt="portofolio-9" className="w-full" loading="lazy"/>
+                </div>
+                <Link href="https://bisnisretail.vercel.app/" className="hover:bg-primary hover:text-white">
+                    <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Web Application Kasir</h3>
+                </Link>
                 <p className="font-md text-base text-secondary">a web-based application designed to perform CRUD functions of an E-Commerce.</p>
             </div>
         </div>
@@ -284,51 +300,49 @@ export default function Home() {
                 <div className="rounded-md shadow-md overflow-hidden">
                     <Image src={sertifikat1} alt="artificial intelligence" className="w-full" loading="lazy" />
                 </div>
-                <a href="../public/certificate/106 Artificial Intelligence - ILHAM ADI PURNOMO_sign.pdf" className="visited:text-blue-500">
-                    <h3 className="font-semibold text-dark text-xl mt-5 mb-3 active:text-green-50">artificial intelligence competition participant certificate</h3>
-                </a>
-                {/* {{-- <p className="font-md text-base text-secondary">Modern portfolio blending minimalism with dynamic, expressive web design elements.</p> --}} */}
+                <h3 className="font-semibold text-dark text-xl mt-5 mb-3">artificial intelligence competition participant certificate</h3>
+                {/* <a href="../public/certificate/106 Artificial Intelligence - ILHAM ADI PURNOMO_sign.pdf" className="visited:text-blue-500">
+                </a> */}
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
                     <Image src={sertifikat2} alt="python" className="w-full"  loading="lazy" />
                 </div>
-                <a href="../public/certificate/sertifikat_course_86_3858903_270224134211.pdf" className="visited:text-blue-500">
-                    <h3 className="font-semibold text-dark text-xl mt-5 mb-3 active:text-green-500">Certificate of completion of python className</h3>
-                </a>
-                {/* {{-- <p className="font-md text-base text-secondary">Engaging article landing page with vibrant visuals</p> --}} */}
+                <h3 className="font-semibold text-dark text-xl mt-5 mb-3 ">Certificate of completion of python className</h3>
+                {/* <a href="../public/certificate/sertifikat_course_86_3858903_270224134211.pdf" className="visited:text-blue-500">
+                </a> */}
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
                     <Image src={sertifikat3} alt="meachine learning" className="w-full" loading="lazy"/>
                 </div>
-                <a href="../public/certificate/sertifikat_course_184_3858903_040424123216.pdf" className="visited:text-blue-500">
-                    <h3 className="font-semibold text-dark text-xl mt-5 mb-3 active:text-green-500">Certificate of Completion of beginner teaching learning className</h3>
-                </a>
+                <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Certificate of Completion of beginner teaching learning className</h3>
+                {/* <a href="../public/certificate/sertifikat_course_184_3858903_040424123216.pdf" className="visited:text-blue-500">
+                </a> */}
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
                     <Image src={sertifikat4} alt="Flutter" className="w-full" loading="lazy"/>
                 </div>
-                <a href="../public/certificate/devcoach-164-flutter-navigasikan-aplikasimu-dengan-navigator-20-certificate.pdf" className="visited:text-blue-500">
-                    <h3 className="font-semibold text-dark text-xl mt-5 mb-3 active:text-green-500 pt-4">Certificate of participation in Devcoach 164 Flutter dicoding event</h3>
-                </a>
+                <h3 className="font-semibold text-dark text-xl mt-5 mb-3 pt-4">Certificate of participation in Devcoach 164 Flutter dicoding event</h3>
+                {/* <a href="../public/certificate/devcoach-164-flutter-navigasikan-aplikasimu-dengan-navigator-20-certificate.pdf" className="visited:text-blue-500">
+                </a> */}
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
                     <Image src={sertifikat5} alt="basic atm" className="w-full" loading="lazy"/>
                 </div>
-                <a href="../public/certificate/sertif atm pentest.pdf" className="visited:text-blue-500">
-                    <h3 className="font-semibold text-dark text-xl mt-5 mb-3 active:text-green-500">Certificate of Participation in Basic ATM Pentest event: Uncover the secrets of ATM Cyber Security Education</h3>
-                </a>
+                 <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Certificate of Participation in Basic ATM Pentest event: Uncover the secrets of ATM Cyber Security Education</h3>
+                {/* <a href="../public/certificate/sertif atm pentest.pdf" className="visited:text-blue-500">
+                </a> */}
             </div>
             <div className="mb-12 p-4 md:w-1/2">
                 <div className="rounded-md shadow-md overflow-hidden">
                     <Image src={sertifikat6} alt="ransomware" className="w-full" loading="lazy" />
                 </div>
-                <a href="../public/certificate/ilham adi purnomo.pdf" className="visited:text-blue-500">
-                    <h3 className="font-semibold text-dark text-xl mt-5 mb-3 active:text-green-500">Certificate of Participation in Defender Ransomware</h3>
-                </a>
+                <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Certificate of Participation in Defender Ransomware</h3>
+                {/* <a href="../public/certificate/ilham adi purnomo.pdf" className="visited:text-blue-500">
+                </a> */}
             </div>
         </div>
       </div>
