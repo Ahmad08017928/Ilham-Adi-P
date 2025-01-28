@@ -2,8 +2,14 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import liveServe from "./img/live-serve.jpg";
-import host from "./img/host.png"
+import BlogPhp from "./img/blog-php.jpg";
+import functionphp from "./img/function.png";
+import koneksi from "./img/koneksi.png";
+import ifelse from "./img/ifelse.png";
+import fromphp from "./img/form-php.png";
+import fromhtml from "./img/form-html.png";
+import variabel from "./img/VariabelTipeData.png";
+import php from "./img/php.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +22,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Blog Github",
+    title: 'Belajar PHP Singkat - Dasar untuk Pemula',
+    description: 'Belajar cepat PHP Native untuk pemula, langsung praktik dengan contoh sederhana. Cocok untuk yang baru mulai coding.',
+    keywords: 'belajar PHP, PHP native, pemula PHP, dasar PHP',
+    openGraph: {
+      title: 'Belajar PHP Singkat - Dasar untuk Pemula',
+      description: 'Tutorial PHP dasar untuk pemula, belajar PHP Native dengan cara mudah dan langsung praktik.',
+      url: 'https://bytemindsoftware.vercel.app/belajar-php-singkat',
+    },
 };
 
 
@@ -24,80 +37,109 @@ export default function blog_liveserve() {
   return (
     <>
     <html lang="en">
-    <body>
-        <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased rounded-3xl drop-shadow-2xl selection:bg-amber-400 text-justify">
-                <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-                    <article className="mx-auto w-full max-w-5xl format format-sm sm:format-base lg:format-lg format-blue">
-                        <header className="mb-4 lg:mb-6 not-format">
-                                <Link href="/" className="font-medium text-sm text-blue-500 hover:underline">&laquo; Back To Page</Link>
-                            <address className="flex items-center my-6 not-italic">
-                                <div className="inline-flex items-center mr-3 text-sm text-gray-900">
-                                    <div>
-                                        <h1 className="text-xl font-bold text-gray-900">Ilham Adi Purnomo</h1>
-                                        <p className="text-base text-gray-500 ">Rabu, 28-08-2024</p>
-                                    </div>
-                                </div>
-                            </address>
-                            <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl ">Tips Praktis: Menampilkan project web Laravel di HP Tanpa Ribet!</h1>
-                            <Image src={liveServe} alt="Live serve" className="mb-4 w-full" />
-                        </header>
-                        <div className="selection:bg-lime-600 selection:text-gray-100 text-slate-600 mb-3 text-lg">
-                            <p className="mb-2">Ingin tahu cara menampilkan project web app Laravel langsung di smartphone? Ini 
-                                adalah panduan simpel yang bakal bikin kamu bisa cek hasil coding Laravel kamu tanpa ribet, 
-                                langsung dari ponsel. Yuk, simak langkah-langkahnya!</p>
+      <body>
+      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased rounded-3xl drop-shadow-2xl selection:bg-amber-400 text-justify">
+        <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
+            <article className="mx-auto w-full max-w-5xl format format-sm sm:format-base lg:format-lg format-blue">
+                <header className="mb-4 lg:mb-6 not-format">
+                        <Link href="/" className="font-medium text-sm text-blue-500 hover:underline">&laquo; Back To Page</Link>
+                    <address className="flex items-center my-6 not-italic">
+                        <div className="inline-flex items-center mr-3 text-sm text-gray-900">
+                            <div>
+                                <h1 className="text-xl font-bold text-gray-900">Ilham Adi Purnomo</h1>
+                                <p className="text-base text-gray-500 ">Rabu, 28-08-2024</p>
                             </div>
-                            <ul className="list-none list-outside">
-                                <li className="mb-3">
-                                    <h3 className="font-semibold text-lg">1. Pastikan Laravel Berjalan di Server Lokal</h3>
-                                </li>
-                            </ul>
+                        </div>
+                    </address>
+                    <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl ">Belajar singkat tentang PHP Native</h1>
+                    <Image src={BlogPhp} alt="Php" className="mb-4" />
+                </header>
+                <div className="selection:bg-lime-600 selection:text-gray-100 text-slate-600 mb-3 text-lg">
+                    <p className="mb-2">PHP itu salah satu bahasa pemrograman yang banyak dipakai buat bikin <strong>website 
+                        dinamis.</strong> Nah, PHP Native itu artinya kita pakai PHP murni, tanpa bantuan framework kayak 
+                        Laravel atau CodeIgniter. Kalau mau ngerti dasar-dasar pemrograman web, belajar PHP Native 
+                        ini langkah yang oke banget.</p>
+                    <h2 className="text-lg font-semibold mb-2">Apa itu sih Php Native ? </h2>
+                    <p className="mb-2">PHP Native adalah cara paling simpel buat pakai PHP. Di sini, kita nulis kode PHP langsung tanpa 
+                        framework tambahan. Jadi, kita bisa paham banget gimana PHP bekerja di balik layar dan bisa 
+                        ngatur semuanya sesuai keinginan kita.</p>
+                    <p className="mb-2">Buat mulai belajar, ada beberapa hal yang perlu disiapkan:</p>
+                    <div className="text-slate-600 mx-3">
+                        <ul className="list-disc list-outside">
+                            <li className="mb-2">
+                                <p><strong>Serve lokal:</strong> Bisa pakai XAMPP atau WAMP biar PHP bisa jalan di komputer kamu.</p>
+                            </li>
+                            <li className="mb-2">
+                                <p><strong>Teks editor:</strong> Pakai editor teks kayak VS Code atau Sublime Text buat nulis kodenya.</p>
+                            </li>
+                            <li className="mb-2">
+                                <p><strong>Browser:</strong> Buat lihat hasil kodingan yang udah kamu buat.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p className="font-light text-xl text-slate-600 my-2 mx-2">PHP itu gampang banget dipelajari, apalagi kalau udah tahu sintaks dasarnya.</p>
+                    <p className="font-light text-xl text-slate-600 my-2 mx-2">Contoh paling sederhana </p>
+                    <Image src={php} alt="php" className="mx-auto mt-4 mb-6" />
+                    <p className="font-light text-xl text-slate-600 my-2">Kodingan di atas bakal nampilin tulisan "Hello, World!" di browser kamu.</p>
+                    <ul className="list-disc list-outside">
+                        <li className="mb-3 mx-3">
+                            <h3 className="font-semibold text-lg">Variabel dan Tipe Data</h3>
+                        </li>
+                    </ul>
 
-                            <p className="font-light text-xl text-slate-600 my-2 mx-2">Pertama-tama, pastikan project Laravel 
-                                kamu sudah berjalan di server lokal. Kamu bisa menjalankannya dengan perintah berikut di 
-                                terminal</p>
-                            <p className="font-light text-xl text-slate-600 my-2 mx-2">`php artisan serve`</p>
-                            <p className="font-light text-xl text-slate-600 mb-4 mx-2">Biasanya, Laravel akan berjalan di localhost:8000 pada komputer kamu</p>
+                    <p className="font-light text-xl text-slate-600 my-2 mx-2">Di PHP, variabel selalu diawali dengan tanda $. PHP juga punya berbagai tipe data, kayak integer, string, dan array.</p>
+                    <Image src={variabel} alt="Varibel&tipe data" className="my-4 mx-auto" />
+                    <ul className="list-disc list-outside">
+                        <li className="mb-3 mx-3">
+                            <h3 className="font-semibold text-lg">Struktur Kendali</h3>
+                        </li>
+                    </ul>
 
-                            <ul className="list-none list-outside">
-                                <li className="mb-3">
-                                    <h3 className="font-semibold text-lg">2. Temukan Alamat IP Komputer</h3>
-                                </li>
-                            </ul>
+                    <p className="font-light text-xl text-slate-600 my-2 mx-2">PHP juga mendukung berbagai struktur kendali kayak if, else, while, dan for.</p>
+                    <Image src={ifelse} alt="if else" className="my-4 mx-auto" />
 
-                            <p className="font-light text-xl text-slate-600 my-2 mx-2">Untuk mengakses Laravel dari smartphone, kamu butuh alamat IP dari komputer yang menjalankan server Laravel.</p>
-                            <p className="font-semibold text-xl text-slate-600 my-2 mx-2">Caranya : </p>
-                            <ul className="list-disc list-outside">
-                                <li className="mb-3 mx-3">
-                                    <p><strong>Windows : </strong>Buka Command Prompt, ketik ipconfig, dan cari alamat IPv4 di bagian koneksi jaringan aktif.</p>
-                                </li>
-                                <li className="mb-3 mx-3">
-                                    <p><strong>Mac/Linux : </strong>Buka terminal, ketik ifconfig dan cari alamat IP di bagian koneksi jaringan.</p>
-                                </li>
-                            </ul>
-                            <p className="font-light text-xl text-slate-600 mb-4 mx-2">Alamat IP ini biasanya berbentuk 192.168.x.x.</p>
+                    <ul className="list-disc list-outside">
+                        <li className="mb-3 mx-3">
+                            <h3 className="font-semibold text-lg">Bikin Fungsi di PHP</h3>
+                        </li>
+                    </ul>
 
-                            <ul className="list-none list-outside">
-                                <li className="mb-3">
-                                    <h3 className="font-semibold text-lg">3. Setting file package.json</h3>
-                                </li>
-                            </ul>
+                    <p className="font-light text-xl text-slate-600 my-2 mx-2">Fungsi itu kayak blok kode yang bisa dipakai berulang kali. Di PHP, kamu bisa membuat fungsi sendiri.</p>
+                    <Image src={functionphp} alt="fuction php" className="my-4 mx-auto" />
+                    <p className="mt-2 mb-4">Fungsi greet di atas bakal nyapa dengan nama yang kamu masukin.</p>
 
-                            <p className="font-light text-xl text-slate-600 my-2 mx-2">Setelah kamu mengetahui alamat IPv4 dari komputer yang menjalankan 
-                                server Laravel, langkah berikutnya adalah masuk ke file package.json di dalam project Laravel kamu. Di dalam file tersebut, 
-                                cari bagian scripts, dan temukan key yang bernama vite. Sesuaikan konfigurasi di bagian vite seperti yang dijelaskan atau 
-                                ditunjukkan pada gambar berikutnya dalam artikel ini.</p>
-                            <Image src={host} alt="package.json" className="my-4 mx-auto" />
-                            <p className="font-light text-xl text-slate-600 my-2 mx-2">Setelah kamu mengubah konfigurasi vite, langkah selanjutnya adalah menjalankan perintah berikut di terminal</p>
-                            <p className="font-light text-xl text-slate-600 my-2 mx-2">`php artisan serve --host 0.0.0.0`</p>
-                            <p className="font-light text-xl text-slate-600 mb-4 mx-2">Jika perintah tersebut berhasil dijalankan, maka server Laravel kamu akan siap diakses dari perangkat lain.</p>
-                            <p className="font-light text-xl text-slate-600 my-2 mx-2">Sekarang, buka browser di smartphone kamu, masukkan alamat IPv4 yang tadi kamu dapatkan, dan tambahkan port :8000 di akhir alamat tersebut. Misalnya</p>
-                            <p className="font-light text-xl text-slate-600 my-2 mx-2">`http://192.168.x.x:8000`</p>
-                            <p className="font-light text-xl text-slate-600 mt-5 mx-2">Dengan cara ini, kamu bisa langsung melihat hasil project Laravel kamu di smartphone, memudahkanmu untuk menguji tampilan dan fungsionalitas aplikasi di perangkat mobile.</p>
-                    </article>
+                    <ul className="list-disc list-outside">
+                        <li className="mb-3 mx-3">
+                            <h3 className="font-semibold text-lg">Form HTML dan Pengolahan Data</h3>
+                        </li>
+                    </ul>
+
+                    <p className="font-light text-xl text-slate-600 my-2 mx-2">PHP sering banget dipakai buat ngolah data dari form HTML. Contoh form sederhananya adalah</p>
+                    <Image src={fromhtml} alt="form html" className="my-4" />
+                    <p className="font-light text-xl text-slate-600 mb-2 mx-2">Di file proses.php, kamu bisa akses data yang dikirim lewat variabel global $_POST</p>
+                    <Image src={fromphp} alt="form php" className="my-4" />
+
+                    <ul className="list-disc list-outside">
+                        <li className="mb-3 mx-3">
+                            <h3 className="font-semibold text-lg">Koneksi PHP ke Database</h3>
+                        </li>
+                    </ul>
+
+                    <p className="font-light text-xl text-slate-600 my-2 mx-2">Kalau mau bikin aplikasi yang lebih canggih, kamu mungkin perlu koneksi PHP ke database kayak MySQL. Contoh singkatnya seperti di bawah ini</p>
+                    <Image src={koneksi} alt="koneksi" className="mb-6" />
+
+                    <div>
+                        <p>Belajar PHP Native itu langkah awal yang penting dalam pengembangan web. Meski keliatannya simpel, konsep-konsep dasar ini bakal <strong>berguna banget kalau kamu mau lanjut pakai framework yang lebih kompleks.</strong></p>
+                        <p className="mb-4">Nah, kalau udah ngerti PHP Native, kamu bisa coba deh framework-framework PHP yang lebih canggih, salah satunya adalah</p>
+                        <h3 className="text-xl font-semibold">Laravel</h3>
+                        <p className="mb-4">Laravel adalah framework PHP paling populer yang bikin hidup developer lebih gampang dengan berbagai fitur otomatisasinya.</p>
+                        <p>Dengan ngerti PHP dari dasarnya, kamu bakal lebih siap buat menghadapi berbagai tantangan di dunia pengembangan web. Mulai aja dulu dengan proyek-proyek kecil, nanti lama-lama juga makin jago. Semakin sering latihan, semakin mahir juga kamu bikin kode PHP yang keren!</p>
+                    </div>
                 </div>
-            </main>
-
-            {/* footer */}
+              </article>
+            </div>
+        </main>
+        {/* footer */}
         <footer className="bg-dark pt-24 pb-12">
           <div className="container">
               <div className="flex flex-wrap">
@@ -199,7 +241,7 @@ export default function blog_liveserve() {
           </div>
         </footer>
         {/* end footer */}
-       </body>
+      </body>
     </html>
     </>
   );

@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import BlogCss from "./img/web-desain.jpg";
-import mediaCss from "./img/media-css.png";
-import gridCss from "./img/grid-css.png";
-import flex from "./img/flex.png";
-import display from "./img/display-css.png";
-import positionCss from "./img/position.png";
+import BlogHtml from "./img/web-programmer.jpg";
+import stukturHtml from "./img/StrukturHtml.png";
+import html from "./img/Html.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +17,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Blog Github",
+    title: 'Belajar Dasar HTML dalam 5 Menit - Panduan Efektif',
+    description: 'Pelajari dasar HTML hanya dalam 5 menit! Panduan efektif dan mudah dipahami, cocok untuk pemula.',
+    keywords: 'belajar HTML, HTML pemula, dasar HTML, panduan HTML',
+    openGraph: {
+      title: 'Belajar Dasar HTML dalam 5 Menit - Panduan Efektif',
+      description: 'Tutorial HTML dasar hanya dalam 5 menit, cocok untuk yang baru mulai belajar coding.',
+      url: 'https://bytemindsoftware.vercel.app/belajar-dasar-html'
+    },
 };
 
 
@@ -29,105 +33,71 @@ export default function blog_liveserve() {
     <>
     <html lang="en">
       <body>
-          <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased rounded-3xl drop-shadow-2xl selection:bg-amber-400 text-justify">
-            <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-                <article className="mx-auto w-full max-w-5xl format format-sm sm:format-base lg:format-lg format-blue">
-                    <header className="mb-4 lg:mb-6 not-format">
-                        <Link href="/" className="font-medium text-sm text-blue-500 hover:underline">&laquo; Back To Page</Link>
-                        <address className="flex items-center my-6 not-italic">
-                            <div className="inline-flex items-center mr-3 text-sm text-gray-900">
-                                <div>
-                                    <h1 className="text-xl font-bold text-gray-900">Ilham Adi Purnomo</h1>
-                                    <p className="text-base text-gray-500 ">Rabu, 28-08-2024</p>
-                                </div>
-                            </div>
-                        </address>
-                        <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl ">Belajar singkat tentang Layout Css</h1>
-                        <Image src={BlogCss} alt="Css" className="mb-4" />
-                    </header>
-                    <div className="selection:bg-lime-600 selection:text-gray-100 text-slate-600 mb-3 text-lg">
-                        <p className="mb-2">CSS (Cascading Style Sheets) itu bahasa yang dipakai buat <strong>ngatur tampilan dan tata letak elemen-elemen di halaman web.</strong> 
-                            Salah satu hal penting dari CSS adalah cara kita ngatur layout atau tata letak halaman biar terlihat rapi dan menarik. Nah, di 
-                            artikel ini kita bakal bahas dasar-dasar layout CSS dengan cara yang santai dan gampang dipahami.</p>
-                        <p className="mb-2">Layout CSS itu cara kita ngatur posisi dan tampilan elemen-elemen di halaman web. <strong>Mulai dari cara elemen yang ditampilkan 
-                            secara horizontal atau vertikal, sampai gimana mereka (tampilan) bisa menyesuaikan diri di berbagai ukuran layar.</strong> Dengan ngerti layout CSS, 
-                            kita bisa bikin halaman web yang responsif dan enak dilihat di mana aja, dari laptop sampai HP</p>
-                        <p className="mb-2">Sebelum kita masuk ke teknik layout yang lebih canggih, penting banget buat ngerti perbedaan antara elemen block dan inline</p>
-                        <div className="text-slate-600 mx-3">
-                            <ul className="list-disc list-outside">
-                                <li className="mb-2">
-                                    <p><strong>Block:</strong> Elemen block, kayak &lt;div&gt; atau &lt;p&gt;, akan memenuhi seluruh lebar halaman dan otomatis mulai di baris baru.</p>
-                                </li>
-                                <li className="mb-2">
-                                    <p><strong>Inline:</strong> Elemen inline, kayak &lt;span&gt; atau &lt;a&gt;, cuma mengambil ruang sesuai kontennya dan nggak mulai di baris baru.</p>
-                                </li>
-                            </ul>
-                            <Image src={display} alt="display css" className="my-4 mx-auto" />
-                        </div>
-                        <p className="font-light text-xl text-slate-600 my-2 mx-2">Flexbox itu salah satu cara yang paling sering dipakai dan <strong>cara simpel buat ngatur layout. Dengan Flexbox, 
-                            kita bisa gampang ngatur elemen-elemen biar sejajar secara horizontal atau vertikal</strong>, plus ngatur jarak antar elemen. </p>
-                        <p className="font-light text-xl text-slate-600 my-2 mx-2">Contoh paling Flexbox </p>
-                        <Image src={flex} alt="flexbox" className="mx-auto mt-4 mb-6" />
-                        <p className="font-light text-xl text-slate-600 my-2">Contoh di atas bikin elemen-elemen di dalam .container berada di tengah-tengah, baik secara horizontal maupun vertikal. Gampang, kan?</p>
-                        <ul className="list-disc list-outside">
-                            <li className="mb-3 mx-3">
-                                <h3 className="font-semibold text-lg">Grid Layout</h3>
-                            </li>
-                        </ul>
+        <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased rounded-3xl drop-shadow-2xl selection:bg-amber-400 text-justify">
+          <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
+              <article className="mx-auto w-full max-w-5xl format format-sm sm:format-base lg:format-lg format-blue">
+                  <header className="mb-4 lg:mb-6 not-format">
+                          <Link href="/" className="font-medium text-sm text-blue-500 hover:underline">&laquo; Back To Page</Link>
+                      <address className="flex items-center my-6 not-italic">
+                          <div className="inline-flex items-center mr-3 text-sm text-gray-900">
+                              <div>
+                                  <h1 className="text-xl font-bold text-gray-900">Ilham Adi Purnomo</h1>
+                                  <p className="text-base text-gray-500 ">Selasa, 27-08-2024</p>
+                              </div>
+                          </div>
+                      </address>
+                      <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl ">Belajar Html Selama Lima menit</h1>
+                      <Image src={BlogHtml} alt="Html" />
+                  </header>
+                  <div className="selection:bg-lime-600 selection:text-gray-100 text-slate-600 mb-3 text-lg">
+                      <p className="mb-2">HTML (HyperText Markup Language) adalah fondasi dari setiap halaman web. Jika Anda baru memulai 
+                          perjalanan dalam pengembangan web, HTML adalah tempat terbaik untuk memulai. Dalam artikel ini, kita akan 
+                          belajar dasar-dasar HTML hanya dalam lima menit.</p>
 
-                        <p className="font-light text-xl text-slate-600 my-2 mx-2">CSS Grid itu teknik layout yang lebih keren dan kompleks dibanding Flexbox. 
-                            Dengan Grid, kita bisa bikin layout dengan baris dan kolom, mirip kayak tabel tapi <strong>jauh lebih fleksibel.</strong></p>
-                        <Image src={gridCss} alt="grid css" className="my-4 mx-auto" />
-                        <p className="font-light text-xl text-slate-600 mb-4 mx-2">Di sini, .container bakal punya tiga kolom yang masing-masing ukurannya sama, dan ada jarak 10px di antara kolom-kolom itu.</p>
+                      <p className="mb-2"><span className="font-bold text-lg">Apa itu Html ?</span> HTML adalah bahasa markup yang digunakan 
+                          untuk membuat struktur halaman web. Elemen-elemen HTML membentuk blok bangunan dari halaman web, seperti 
+                          teks, gambar, dan tautan</p>
 
-                        <ul className="list-disc list-outside">
-                            <li className="mb-2 mx-3">
-                                <h3 className="font-semibold text-lg">Positioning</h3>
-                            </li>
-                        </ul>
-
-                        <p className="font-light text-xl text-slate-600 my-2 mx-2">Selain Flexbox dan Grid, CSS juga punya properti position yang bikin kita bisa <strong>ngatur posisi elemen secara lebih spesifik</strong>.</p>
-                        <ol className="list-decimal list-outside">
-                          <ul>
-                              <li className="mb-2 mx-3">
-                                    <p><strong>Static (default) : </strong>Elemen ditempatkan sesuai aliran dokumen biasa.</p>
-                                </li>
-                                <li className="mb-2 mx-3">
-                                    <p><strong>Relative : </strong>Elemen diposisikan relatif terhadap posisi awalnya.</p>
-                                </li>
-                                <li className="mb-2 mx-3">
-                                    <p><strong>Absolute : </strong>Elemen diposisikan relatif terhadap elemen induknya yang 
-                                        paling dekat dengan position: relative.</p>
-                                </li>
-                                <li className="mb-2 mx-3">
-                                    <p><strong>Fixed : </strong> Elemen diposisikan relatif terhadap viewport, alias tetap 
-                                        di tempat meskipun halaman di-scroll.</p>
-                                </li>
-                            </ul>
-                        </ol>
-                            <Image src={positionCss} alt="position" className="my-4 mx-auto" />
-
-                            <ul className="list-disc list-outside">
-                                <li className="mb-3 mx-3">
-                                    <h3 className="font-semibold text-lg">Media Queries</h3>
-                                </li>
-                            </ul>
-                        <p className="font-light text-xl text-slate-600 my-2 mx-2">Biar layout kita kelihatan oke di semua 
-                            perangkat, kita perlu pakai media queries. Media queries bikin kita bisa ngatur tampilan yang 
-                            beda-beda tergantung ukuran layar.</p>
-                        <Image src={mediaCss} alt="media Queries" className="mt-4 mb-6 mx-auto" />
-                        <p className="mb-4">Kalau lebar layar lebih kecil dari 768px, .container cuma bakal punya satu kolom, jadi layout-nya lebih ramah buat mobile.</p>
-
-                        <div>
-                            <p className="mb-3">Mengerti tentang CSS Layout itu penting banget buat bikin website yang nggak cuma fungsional tapi juga enak dilihat. Dengan pakai Flexbox, Grid, dan 
-                                teknik positioning, kita bisa ngatur elemen-elemen di halaman web jadi rapi dan responsif.</p>
-                            <p>Buat makin jago, coba-coba aja bikin layout untuk berbagai tipe halaman web, dari landing page, blog, sampai e-commerce. Semakin sering 
-                                latihan, makin luwes deh kamu ngatur layout pakai CSS!</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </main>
+                      <p className="mb-2">Setiap dokumen HTML dimulai dengan &lt;!DOCTYPE html&gt; dan diikuti dengan elemen 
+                          &lt;html&gt;, yang merupakan pembungkus seluruh konten. Di dalamnya, terdapat dua bagian utama: 
+                          &lt;head&gt; dan &lt;body&gt;.</p>
+                      
+                      <p className="font-light text-2xl mb-2">Contoh Stuktur Html</p>
+                      <Image src={stukturHtml} alt="strukturhtml" className="my-2 mx-3" />
+                      <p className="font-light text-2xl mb-2">Mari kita kenalan dengan beberapa elemen HTML dasar yang sering kamu gunakan saat membuat halaman web.</p>
+                      <div className="text-slate-600 mx-2">
+                          <ul className="list-disc list-outside">
+                              <li className="mb-2">
+                                  <p>&lt;h1&gt; hingga &lt;h6&gt;: Ini adalah judul-judul yang bisa kamu gunakan. Mulai dari &lt;h1&gt; yang paling besar dan mencolok, hingga &lt;h6&gt; 
+                                      yang lebih kecil. Cocok untuk mengatur hierarki informasi di halaman kamu!</p>
+                              </li>
+                              <li className="mb-2">
+                                  <p>&lt;p&gt;: Digunakan untuk menulis paragraf. Sangat berguna untuk menjelaskan ide atau memberikan informasi kepada pengunjung.</p>
+                              </li>
+                              <li className="mb-2">
+                                  <p>&lt;a&gt;: Elemen ini bikin kamu bisa membuat tautan (link). Misalnya, kalau mau mengarahkan pengunjung ke situs lain, kamu bisa pakai 
+                                      &lt;a href="https://www.example.com"&gt;Kunjungi Situs Ini&lt;a&gt;.</p>
+                              </li>
+                              <li className="mb-2">
+                                  <p>&lt;img&gt;: Mau menampilkan gambar? Gunakan elemen ini! Contohnya: &lt;img src="gambar.jpg" alt="Deskripsi Gambar"&gt;. Jangan lupa tambahkan 
+                                      deskripsi gambar agar lebih informatif!</p>
+                              </li>
+                              <li className="mb-2">
+                                  <p>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;: Ini untuk membuat daftar. Punya daftar belanja? Pakai &lt;ul&gt; untuk daftar tanpa angka (bullet list) dan &lt;ol&gt; untuk 
+                                      daftar berurutan (numbered list).</p>
+                              </li>
+                          </ul>
+                      </div>
+                      <p className="mb-2">Dengan elemen-elemen dasar ini, kamu sudah siap untuk membuat halaman web sederhana! Berikut contoh yang lebih lengkap agar kamu bisa 
+                          langsung coba.</p>
+                      <Image src={html} alt="code html" className="my-3 mx-3" />
+                  </div>
+                  <p className="font-light text-xl text-slate-600 my-2 mx-2">Dalam lima menit, kamu sudah mengenal dasar-dasar HTML! Sekarang, saatnya berlatih lebih banyak dengan membuat halaman web sederhana. Ingat, HTML itu 
+                      seperti pintu gerbang menuju dunia pengembangan web yang lebih seru, jadi jangan ragu untuk bereksperimen dan mencoba hal-hal baru!
+                      Sekarang kamu sudah punya bekal untuk membangun struktur halaman web kamu sendiri. Selamat mencoba, dan semoga seru!</p>
+              </article>
+          </div>
+      </main>             
         {/* footer */}
         <footer className="bg-dark pt-24 pb-12">
           <div className="container">

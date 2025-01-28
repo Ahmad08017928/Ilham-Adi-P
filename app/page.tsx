@@ -410,7 +410,7 @@ export default function Home() {
                 <div className="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
                     <Image src={blog_github} alt="github" className="w-full" loading="lazy"/>
                     <div className="py-8 px-6">
-                        <Link href="./blog_github" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                        <Link href="./tips-hosting-website-di-github-free" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
                             <h3>Tips Hosting website di github FREE!!</h3>
                         </Link>
                         <p className="font-medium text-base text-secondary mb-6">Cara Mudah Hosting website gratis di github dengan tips praktis dan tutorial yang lengkap</p>
@@ -421,7 +421,7 @@ export default function Home() {
                 <div className="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
                     <Image src={blog_liveserve} alt="live serve" className="w-full" loading="lazy"/>
                     <div className="py-8 px-6">
-                        <Link href="./blog_liveserve" className="block mb-3 font-semibold text-xl text-dark hover:text-primary">
+                        <Link href="./menampilkan-project-web-laravel-di-hp" className="block mb-3 font-semibold text-xl text-dark hover:text-primary">
                             <h3>Tips Praktis: Menampilkan project web Laravel kita di HP Tanpa Ribet!</h3>
                         </Link>
                         <p className="font-medium text-base text-secondary mb-6">Jangan pusing lagi! Pelajari cara menampilkan hasil coding Laravel di HP dengan 
@@ -433,7 +433,7 @@ export default function Home() {
                 <div className="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
                     <Image src={blog_php} alt="blog php" className="w-full" loading="lazy"/>
                     <div className="py-8 px-6">
-                        <Link href="./blog_php" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                        <Link href="./belajar-belajar-php" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
                             <h3>Belajar singkat tentang PHP Native</h3>
                         </Link>
                         <p className="font-medium text-base text-secondary mb-6">Belajar cepat PHP Native untuk pemula, langsung praktik dengan contoh sederhana</p>
@@ -444,7 +444,7 @@ export default function Home() {
                 <div className="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
                     <Image src={blog_css} alt="web desain" className="w-full" loading="lazy"/>
                     <div className="py-8 px-6">
-                        <Link href="./blog_css" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                        <Link href="./belajar-css-singkat" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
                             <h3>Belajar singkat tentang layout Css</h3>
                         </Link>
                         <p className="font-medium text-base text-secondary mb-6">Panduan cepat mempelajari css layout, atur tampilan website dengan mudah dan rapi</p>
@@ -455,7 +455,7 @@ export default function Home() {
                 <div className="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
                     <Image src={blog_html} alt="learn html" className="w-full" loading="lazy"/>
                     <div className="py-8 px-6">
-                        <Link href="./blog_html" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                        <Link href="./belajar-dasar-html" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
                             <h3>Belajar Html Selama Lima menit</h3>
                         </Link>
                         <p className="font-medium text-base text-secondary mb-6">Pelajari Html dasar hanya dalam 5 (lima) menit, efektif dan mudah di pahami</p>

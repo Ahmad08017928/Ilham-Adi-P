@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import github from "./img/github.jpg";
+import BlogCss from "./img/web-desain.jpg";
+import mediaCss from "./img/media-css.png";
+import gridCss from "./img/grid-css.png";
+import flex from "./img/flex.png";
+import display from "./img/display-css.png";
+import positionCss from "./img/position.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,118 +20,123 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Blog Github",
+    title: 'Belajar CSS Singkat - Layout dan Desain Website',
+    description: 'Panduan belajar CSS untuk mengatur layout dan desain website dengan mudah. Cocok untuk pemula.',
+    keywords: 'CSS, belajar CSS, desain website, layout CSS, pemula',
+    openGraph: {
+      title: 'Belajar CSS Singkat - Layout dan Desain Website',
+      description: 'Tutorial cepat belajar CSS untuk membuat layout website rapi dan profesional.',
+      url: 'https://bytemindsoftware.vercel.app/belajar-css-singkat'
+    },
 };
 
 
-export default function blog_github() {
+export default function blog_liveserve() {
   return (
     <>
     <html lang="en">
-    <body>
-    <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased rounded-3xl drop-shadow-2xl selection:bg-amber-400 text-justify">
-        <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-            <article className="mx-auto w-full max-w-5xl format format-sm sm:format-base lg:format-lg format-blue">
-                <header className="mb-4 lg:mb-6 not-format">
+      <body>
+          <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased rounded-3xl drop-shadow-2xl selection:bg-amber-400 text-justify">
+            <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
+                <article className="mx-auto w-full max-w-5xl format format-sm sm:format-base lg:format-lg format-blue">
+                    <header className="mb-4 lg:mb-6 not-format">
                         <Link href="/" className="font-medium text-sm text-blue-500 hover:underline">&laquo; Back To Page</Link>
-                    <address className="flex items-center my-6 not-italic">
-                        <div className="inline-flex items-center mr-3 text-sm text-gray-900">
-                            <div>
-                                <h1 className="text-xl font-bold text-gray-900">Ilham Adi Purnomo</h1>
-                                <p className="text-base text-gray-500 ">Selasa, 27-08-2024</p>
+                        <address className="flex items-center my-6 not-italic">
+                            <div className="inline-flex items-center mr-3 text-sm text-gray-900">
+                                <div>
+                                    <h1 className="text-xl font-bold text-gray-900">Ilham Adi Purnomo</h1>
+                                    <p className="text-base text-gray-500 ">Rabu, 28-08-2024</p>
+                                </div>
                             </div>
+                        </address>
+                        <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl ">Belajar singkat tentang Layout Css</h1>
+                        <Image src={BlogCss} alt="Css" className="mb-4" />
+                    </header>
+                    <div className="selection:bg-lime-600 selection:text-gray-100 text-slate-600 mb-3 text-lg">
+                        <p className="mb-2">CSS (Cascading Style Sheets) itu bahasa yang dipakai buat <strong>ngatur tampilan dan tata letak elemen-elemen di halaman web.</strong> 
+                            Salah satu hal penting dari CSS adalah cara kita ngatur layout atau tata letak halaman biar terlihat rapi dan menarik. Nah, di 
+                            artikel ini kita bakal bahas dasar-dasar layout CSS dengan cara yang santai dan gampang dipahami.</p>
+                        <p className="mb-2">Layout CSS itu cara kita ngatur posisi dan tampilan elemen-elemen di halaman web. <strong>Mulai dari cara elemen yang ditampilkan 
+                            secara horizontal atau vertikal, sampai gimana mereka (tampilan) bisa menyesuaikan diri di berbagai ukuran layar.</strong> Dengan ngerti layout CSS, 
+                            kita bisa bikin halaman web yang responsif dan enak dilihat di mana aja, dari laptop sampai HP</p>
+                        <p className="mb-2">Sebelum kita masuk ke teknik layout yang lebih canggih, penting banget buat ngerti perbedaan antara elemen block dan inline</p>
+                        <div className="text-slate-600 mx-3">
+                            <ul className="list-disc list-outside">
+                                <li className="mb-2">
+                                    <p><strong>Block:</strong> Elemen block, kayak &lt;div&gt; atau &lt;p&gt;, akan memenuhi seluruh lebar halaman dan otomatis mulai di baris baru.</p>
+                                </li>
+                                <li className="mb-2">
+                                    <p><strong>Inline:</strong> Elemen inline, kayak &lt;span&gt; atau &lt;a&gt;, cuma mengambil ruang sesuai kontennya dan nggak mulai di baris baru.</p>
+                                </li>
+                            </ul>
+                            <Image src={display} alt="display css" className="my-4 mx-auto" />
                         </div>
-                    </address>
-                    <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl ">Tips Hosting website di github FREE!!</h1>
-                    <Image src={github} alt="github" />
-                </header>
-                <div className="selection:bg-lime-600 selection:text-gray-100 text-slate-600 mb-3">
-                    <p className="mb-2">Di era digital yang serba cepat ini, memiliki website pribadi 
-                        atau portofolio online bukan lagi sekadar pilihan, melainkan kebutuhan. Namun, salah satu tantangan terbesar yang dihadapi banyak orang, 
-                        terutama mereka yang baru memulai, adalah biaya hosting. Untungnya, GitHub menawarkan solusi hosting website secara gratis melalui layanan 
-                        GitHub Pages.</p> 
+                        <p className="font-light text-xl text-slate-600 my-2 mx-2">Flexbox itu salah satu cara yang paling sering dipakai dan <strong>cara simpel buat ngatur layout. Dengan Flexbox, 
+                            kita bisa gampang ngatur elemen-elemen biar sejajar secara horizontal atau vertikal</strong>, plus ngatur jarak antar elemen. </p>
+                        <p className="font-light text-xl text-slate-600 my-2 mx-2">Contoh paling Flexbox </p>
+                        <Image src={flex} alt="flexbox" className="mx-auto mt-4 mb-6" />
+                        <p className="font-light text-xl text-slate-600 my-2">Contoh di atas bikin elemen-elemen di dalam .container berada di tengah-tengah, baik secara horizontal maupun vertikal. Gampang, kan?</p>
+                        <ul className="list-disc list-outside">
+                            <li className="mb-3 mx-3">
+                                <h3 className="font-semibold text-lg">Grid Layout</h3>
+                            </li>
+                        </ul>
 
-                    <p className="mb-2">Artikel ini ditujukan bagi siapa saja yang ingin mempelajari <span className="font-bold text-lg">cara mudah dan praktis untuk meng-hosting website secara 
-                        gratis di GitHub.</span> Kami akan memandu Anda langkah demi langkah dalam proses hosting, mulai dari membuat repository hingga tips praktis yang 
-                        dapat membantu Anda mengoptimalkan website Anda.</p>
-                        
-                    <p className="mb-2">Perlu diketahui bahwa <span className="bg-red-500 text-white text-lg">GitHub hanya mengizinkan satu website yang di-hosting dengan GitHub 
-                        Pages per akun pengguna.</span>Website tersebut akan berada di URL yang menggunakan format <code>https://username.github.io</code>. Namun, Anda 
-                        masih bisa meng-host lebih dari satu proyek atau halaman web di GitHub dengan menggunakan repository tambahan yang dapat diakses melalui 
-                        URL seperti <code>https://username.github.io/nama-proyek</code>. Meskipun URL-nya berbeda, hanya satu website yang dapat di-host dengan 
-                        nama domain utama (yaitu <code>username.github.io</code>).</p>
+                        <p className="font-light text-xl text-slate-600 my-2 mx-2">CSS Grid itu teknik layout yang lebih keren dan kompleks dibanding Flexbox. 
+                            Dengan Grid, kita bisa bikin layout dengan baris dan kolom, mirip kayak tabel tapi <strong>jauh lebih fleksibel.</strong></p>
+                        <Image src={gridCss} alt="grid css" className="my-4 mx-auto" />
+                        <p className="font-light text-xl text-slate-600 mb-4 mx-2">Di sini, .container bakal punya tiga kolom yang masing-masing ukurannya sama, dan ada jarak 10px di antara kolom-kolom itu.</p>
 
-                    <p className="mb-2">Dengan memanfaatkan tips ini, Anda tidak hanya akan dapat mempublikasikan website
-                        Anda secara gratis, tetapi juga memastikan bahwa website tersebut berjalan dengan lancar dan efisien. Semoga panduan ini bermanfaat dan membantu 
-                        Anda dalam perjalanan membangun presence online Anda sendiri. Selamat membaca dan mencoba!</p>
-                </div>
-                <h2 className="font-light text-2xl mb-2">Langkah-langkah Hosting Website di GitHub</h2>
-                <div className="text-slate-600 mx-2">
-                    <p className="font-light text-xl mb-2">Bagi Anda yang belum memiliki akun GitHub, ikuti langkah-langkah berikut untuk membuatnya:</p>
-                    <ol className="list-decimal list-outside">
-                        <li className="mb-2">
-                            <p>Buka peramban Anda dan kunjungi situs GitHub di <a href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" className="hover:text-blue-400 no-underline text-inherit">github.com.</a></p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Isi formulir pendaftaran dengan informasi yang diperlukan, seperti username, email, dan password. Pilih username yang unik dan mudah diingat karena ini akan menjadi bagian dari URL website Anda nanti.</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Setelah mengisi formulir, GitHub akan mengirimkan email verifikasi. Buka email tersebut dan klik link yang disediakan untuk memverifikasi akun Anda.</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Setelah verifikasi, akun GitHub Anda siap digunakan.</p>
-                        </li>
-                    </ol>
-                </div>
-                <p className="font-light text-xl mb-2">Setelah membuat akun atau jika Anda sudah memiliki akun, langkah berikutnya adalah meng-upload folder website Anda ke GitHub.</p>
-                <h3 className="font-semibold text-xl mb-2">Step 1 Buat Repository Baru</h3>
-                <div className="text-slate-600 mx-2">
-                    <ul className="list-disc list-outside">
-                        <li className="mb-2">
-                            <p>Login ke akun GitHub Anda.</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Klik tombol "New" di halaman utama GitHub atau dari tab "Repositories".</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Berikan nama repository sesuai keinginan Anda. Jika ingin meng-hosting di GitHub Pages, gunakan format <code>username.github.io</code>.</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Tambahkan deskripsi jika diperlukan dan pilih opsi "Public".</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Klik tombol "Create repository".</p>
-                        </li>
-                    </ul>
-                </div>
-                <p className="font-light text-xl mb-2">Sebelum, masuk ke langkah ke 3 saya mempunyai sedikit kalimat untuk kalian semua yang membaca artikel ini sampai di titik ini. <span className="font-bold text-xl"><q>Ingatlah, tidak ada yang instan dalam dunia pemrograman. Kesabaran dan ketekunan adalah kunci untuk menguasai keterampilan ini.</q></span></p>
-                <p className="font-light text-xl mb-2">Setelah file website ter-upload, Anda bisa melanjutkan ke langkah hosting dengan GitHub Pages</p>
-                <div className="text-slate-600 mx-2">
-                    <ul className="list-disc list-outside">
-                        <li className="mb-2">
-                            <p>Buka repository yang berisi file website Anda.</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Klik tab "Settings" di bagian atas repository.</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Gulir ke bawah hingga menemukan bagian "GitHub Pages".</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Di bagian "Source", pilih "main branch" (atau nama branch lain tempat Anda menyimpan file website) dari dropdown menu.</p>
-                        </li>
-                        <li className="mb-2">
-                            <p>Setelah dipilih, halaman akan otomatis refresh dan URL website Anda akan ditampilkan di bagian atas halaman. URL tersebut biasanya dalam format <code>https://username.github.io</code>.</p>
-                        </li>
-                    </ul>
-                </div>
-                <p className="font-light text-xl mb-2">Setelah itu langkah terakhir apabila semua langkah-langkah di atas di lakukan dengan baik. Maka langkah terakhir adalah <q>Kunjungi URL yang telah diberikan untuk memastikan website Anda sudah live.</q></p>
-            </article>
-        </div>
-    </main>
+                        <ul className="list-disc list-outside">
+                            <li className="mb-2 mx-3">
+                                <h3 className="font-semibold text-lg">Positioning</h3>
+                            </li>
+                        </ul>
 
-    {/* footer */}
-    <footer className="bg-dark pt-24 pb-12">
+                        <p className="font-light text-xl text-slate-600 my-2 mx-2">Selain Flexbox dan Grid, CSS juga punya properti position yang bikin kita bisa <strong>ngatur posisi elemen secara lebih spesifik</strong>.</p>
+                        <ol className="list-decimal list-outside">
+                          <ul>
+                              <li className="mb-2 mx-3">
+                                    <p><strong>Static (default) : </strong>Elemen ditempatkan sesuai aliran dokumen biasa.</p>
+                                </li>
+                                <li className="mb-2 mx-3">
+                                    <p><strong>Relative : </strong>Elemen diposisikan relatif terhadap posisi awalnya.</p>
+                                </li>
+                                <li className="mb-2 mx-3">
+                                    <p><strong>Absolute : </strong>Elemen diposisikan relatif terhadap elemen induknya yang 
+                                        paling dekat dengan position: relative.</p>
+                                </li>
+                                <li className="mb-2 mx-3">
+                                    <p><strong>Fixed : </strong> Elemen diposisikan relatif terhadap viewport, alias tetap 
+                                        di tempat meskipun halaman di-scroll.</p>
+                                </li>
+                            </ul>
+                        </ol>
+                            <Image src={positionCss} alt="position" className="my-4 mx-auto" />
+
+                            <ul className="list-disc list-outside">
+                                <li className="mb-3 mx-3">
+                                    <h3 className="font-semibold text-lg">Media Queries</h3>
+                                </li>
+                            </ul>
+                        <p className="font-light text-xl text-slate-600 my-2 mx-2">Biar layout kita kelihatan oke di semua 
+                            perangkat, kita perlu pakai media queries. Media queries bikin kita bisa ngatur tampilan yang 
+                            beda-beda tergantung ukuran layar.</p>
+                        <Image src={mediaCss} alt="media Queries" className="mt-4 mb-6 mx-auto" />
+                        <p className="mb-4">Kalau lebar layar lebih kecil dari 768px, .container cuma bakal punya satu kolom, jadi layout-nya lebih ramah buat mobile.</p>
+
+                        <div>
+                            <p className="mb-3">Mengerti tentang CSS Layout itu penting banget buat bikin website yang nggak cuma fungsional tapi juga enak dilihat. Dengan pakai Flexbox, Grid, dan 
+                                teknik positioning, kita bisa ngatur elemen-elemen di halaman web jadi rapi dan responsif.</p>
+                            <p>Buat makin jago, coba-coba aja bikin layout untuk berbagai tipe halaman web, dari landing page, blog, sampai e-commerce. Semakin sering 
+                                latihan, makin luwes deh kamu ngatur layout pakai CSS!</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        {/* footer */}
+        <footer className="bg-dark pt-24 pb-12">
           <div className="container">
               <div className="flex flex-wrap">
                   <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
@@ -214,6 +224,7 @@ export default function blog_github() {
                           d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                       </svg>
                       </Link>
+
                       <Link href="https://github.com/Ahmad08017928" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                         <svg role="img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <title>Github</title>
@@ -226,7 +237,7 @@ export default function blog_github() {
           </div>
         </footer>
         {/* end footer */}
-    </body>
+      </body>
     </html>
     </>
   );
