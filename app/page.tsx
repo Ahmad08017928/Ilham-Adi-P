@@ -125,7 +125,7 @@ export default function Home() {
                 <span className="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Ilham Adi Purnomo</span>
             </h1>
             <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student & <span className="text-dark">Junior programmer</span></h2>
-            <p className="font-medium text-secondary mb-10 leading-relaxed">Menghidupkan ide Anda menjadi solusi digital.<span className="text-dark font-bold">Bukan!</span></p>
+            <p className="font-medium text-secondary mb-10 leading-relaxed">Menghidupkan ide Anda menjadi solusi digital.</p>
 
             <Link href="mailto:ilhamadipurnomo55@gmail.com" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</Link>
             </div>
