@@ -33,14 +33,22 @@ import blog_css from "../public/img/web-desain.jpg";
 import blog_html from "../public/img/web-programmer.jpg";
 import Link from "next/link";
 
-
 export default function Home() {
     useEffect(() => {
-        // Menambahkan event scroll untuk fixed navbar
+        // Use type assertions or null checks for DOM elements
         const header = document.querySelector("header");
+        const hamburger = document.querySelector("#hamburger");
+        const navMenu = document.querySelector("#nav-menu");
+    
+        if (!header || !hamburger || !navMenu) {
+          console.warn("Required DOM elements not found");
+          return;
+        }
+    
         const fixedNav = header.offsetTop;
     
-        window.onscroll = function () {
+        // Handle scroll event for fixed navbar
+        const handleScroll = () => {
           if (window.pageYOffset > fixedNav) {
             header.classList.add("navbar-fixed");
           } else {
@@ -48,14 +56,21 @@ export default function Home() {
           }
         };
     
-        // Menambahkan event untuk hamburger menu
-        const hamburger = document.querySelector("#hamburger");
-        const navMenu = document.querySelector("#nav-menu");
-    
-        hamburger.addEventListener("click", function () {
+        // Handle hamburger menu click
+        const handleHamburgerClick = () => {
           hamburger.classList.toggle("hamburger-active");
           navMenu.classList.toggle("hidden");
-        });
+        };
+    
+        // Add event listeners
+        window.addEventListener("scroll", handleScroll);
+        hamburger.addEventListener("click", handleHamburgerClick);
+    
+        // Cleanup event listeners
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+          hamburger.removeEventListener("click", handleHamburgerClick);
+        };
       }, []);
 
   return (
@@ -67,7 +82,7 @@ export default function Home() {
             <a href="#home" className="font-bold text-lg text-primary block py-6">Ilham Adi Purnomo</a>
             </div>
             <div className="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" className="block absolute right-4 lg:hidden">
+            <button id="hamburger" name="hamburger" type="button" className="block absolute right-4 lg:hidden" aria-label="Toggle navigation menu">
                 <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                 <span className="hamburger-line transition duration-300 ease-in-out"></span>
                 <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
@@ -115,7 +130,7 @@ export default function Home() {
             </div>
 
             <div className="w-full self-end px-4 lg:w-1/2">
-            <div className="relative mt-10 lg:mt-9 lg:right-0">
+            <div className="relative mt-32 lg:mt-9 lg:right-0">
                 <Image src={Image_Roket} alt="roket" className="max-w-full mx-auto" priority />
                 <span className="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
                 <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
