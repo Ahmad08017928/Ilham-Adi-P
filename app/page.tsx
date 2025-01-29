@@ -276,10 +276,10 @@ export default function Home() {
                 <div className="rounded-md shadow-md overflow-hidden">
                     <Image src={portofolio9} alt="portofolio-9" className="w-full" loading="lazy"/>
                 </div>
-                <Link href="http://36.88.113.173:8501/" className="hover:bg-primary hover:text-white">
                     <h3 className="font-semibold text-dark text-xl mt-5 mb-3">Web Application Kasir</h3>
-                </Link>
-                <p className="font-md text-base text-secondary">A web-based application designed to handle CRUD functions for cashier operations.</p>
+                    <p className="font-md text-base text-secondary">A web-based application designed to handle CRUD functions for cashier operations.</p>
+{/*                 <Link href="http://36.88.113.173:8501/" className="hover:bg-primary hover:text-white">
+                </Link> */}
             </div>
         </div>
       </div>
