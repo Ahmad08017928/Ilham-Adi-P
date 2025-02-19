@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import Link from "next/link";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 export default function Footer() {
-  useEffect(() => {
-    AOS.init( );
-  });
+//   useEffect(() => {
+//     AOS.init( );
+//   });
   return (
     <>
     <footer className="bg-dark pt-24 pb-12" data-aos="fade-up" data-aos-duration="800">

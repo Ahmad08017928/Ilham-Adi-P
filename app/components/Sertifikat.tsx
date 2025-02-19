@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 import Image from "next/image";
 import sertifikat1 from "../../public/img/artificial intelligence.png";
 import sertifikat2 from "../../public/img/python.png";

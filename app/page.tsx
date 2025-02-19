@@ -22,8 +22,8 @@ import laravel from "../public/img/laravel.svg";
 import next_js from "../public/img/next-js.svg";
 import express_js from "../public/img/express-js.svg";
 import Link from "next/link";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Blog from "./components/Blog";
@@ -31,9 +31,9 @@ import Sertifikat from "./components/Sertifikat";
 import CustomCursor from "./components/CustomCursor";
 
 export default function Home() {
-      useEffect(() => {
-        AOS.init( );
-      });
+    //   useEffect(() => {
+    //     AOS.init( );
+    //   });
   return (
     <>
     {/* <CustomCursor /> */}

@@ -6,13 +6,13 @@ import blog_css from "../../public/img/web-desain.jpg";
 import blog_html from "../../public/img/web-programmer.jpg";
 import Link from "next/link";
 import Image from "next/image";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 export default function Blog() {
-  useEffect(() => {
-      AOS.init( );
-    });
+//   useEffect(() => {
+//       AOS.init( );
+//     });
   return (
     <>
     <section id="blog" className="pt-36 pb-32 bg-slate-100">
