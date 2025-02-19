@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { StaticImageData } from "next/image"; 
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 import Image from "next/image";
@@ -82,7 +83,8 @@ import sertifikat6 from "../../public/img/Screenshot 2024-09-01 190114.png";
 // }
 
 export default function CertificateSection() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  // const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(null);
   const [selectedTitle, setSelectedTitle] = useState("");
 
   const certificates = [

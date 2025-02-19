@@ -28,7 +28,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Blog from "./components/Blog";
 import Sertifikat from "./components/Sertifikat";
-import CustomCursor from "./components/CustomCursor";
 
 export default function Home() {
     //   useEffect(() => {
