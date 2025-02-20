@@ -5,6 +5,7 @@ import "./globals.css";
 import "../public/css/scrollbar.css"
 
 const geistSans = Geist({
+
   variable: "--font-geist-sans",
   subsets: ["latin"],
   preload: true,

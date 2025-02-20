@@ -10,6 +10,7 @@ import sertifikat3 from "../../public/img/machine learning.png";
 import sertifikat4 from "../../public/img/DevCoach Flutter.png";
 import sertifikat5 from "../../public/img/Basic atm.png";
 import sertifikat6 from "../../public/img/Screenshot 2024-09-01 190114.png";
+import sertifikat7 from "../../public/img/Ilham Adi Purnomo.jpg";
 
 // export default function Sertifikat() {
 //   useEffect(() => {
@@ -94,6 +95,7 @@ export default function CertificateSection() {
     { image: sertifikat4, title: "Certificate of participation in Devcoach 164 Flutter dicoding event" },
     { image: sertifikat5, title: "Certificate of Participation in Basic ATM Pentest event: Uncover the secrets of ATM Cyber Security Education" },
     { image: sertifikat6, title: "Certificate of Participation in Defender Ransomware" },
+    { image: sertifikat7, title: "Japanese Certificate" },
   ];
 
   return (
