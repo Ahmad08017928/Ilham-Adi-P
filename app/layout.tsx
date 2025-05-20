@@ -41,6 +41,7 @@ export default function RootLayout({
         <meta
           name="keyword"
           content="website portoflio, karya ilham adi purnomo, ilham adi purnomo"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
