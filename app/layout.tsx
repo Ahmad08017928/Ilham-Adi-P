@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "My Portofolio",
-  description: "website portofolio ilham adi purnomo"
-  keywords: "ilham adi, ilham, bytemind software, portofolio"
+  description: "website portofolio ilham adi purnomo",
+  keywords: 'ilham adi, ilham, bytemind software, portofolio'
 };
 
 export default function RootLayout({
