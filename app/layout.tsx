@@ -40,7 +40,7 @@ export default function RootLayout({
         />
         <meta
           name="keyword"
-          content="website portoflio, karya ilham adi purnomo, ilham adi purnomo"
+          content="website portoflio, karya ilham adi purnomo, ilham adi purnomo, portoflio ilham adi purnomo"
         />
       </head>
       <body
